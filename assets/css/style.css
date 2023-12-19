@@ -1,0 +1,132 @@
+body {
+    display: inline;
+    background-image: linear-gradient(rgb(189, 189, 189) , rgb(95, 95, 95));
+}
+
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+body div {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+
+}
+
+body div section {
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
+    min-height: 750px;
+    position: relative;
+    text-align: center;
+}
+
+body div section h2 {
+    position: absolute;
+    text-wrap: wrap;
+    vertical-align: top;
+    top: 12%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    background-image: linear-gradient(rgb(52, 52, 52) , black);
+    border-bottom: 10px solid white;
+    padding: 2%;
+    color: white;
+}
+
+header h1 {
+    padding-right: 50%;  
+    font-size: 150%;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+header h1 a:hover {
+    text-decoration: underline solid white 5px;
+    color: gray;
+    text-underline-offset: 6px;
+}
+
+header h2 {
+    display: flex;
+    float: right;
+    justify-content: center;
+}
+
+.content-card {
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
+    min-height: 750px;
+    position: relative;
+    text-align: center;
+    border: 10px solid white;
+    border-radius: 25px;
+    background-image: linear-gradient(gray , black);
+    box-shadow: 10px 10px 30px;
+}
+
+.option-buttons {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+    border: 4px solid white;
+    border-radius: 12px;
+    background-image: linear-gradient(rgb(54, 53, 53) , black);
+    background-color: black;
+    font-size: 125%;
+    min-width: 200px;
+    padding: 5px;
+    color: white;
+}
+
+#quiz-title {
+    display: flex;
+    padding: 30px;
+    position: absolute;
+    text-wrap: wrap;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
+
+#question-option {
+    vertical-align: top;
+    position: absolute;
+    text-wrap: wrap;
+    top: 30%;
+}
+
+@media screen and (max-width: 1362px) {
+    #question-option {
+        top: 40%;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+    body div section h2 {
+        top: 16%;
+    }
+
+    #question-option {
+        top: 45%;
+    }
+}
